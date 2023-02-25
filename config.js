@@ -1,3 +1,4 @@
+require("dotenv").config(); //no olvidar importar
 const configs = {
   api: {
     port: process.env.PORT || 3000,
@@ -13,7 +14,7 @@ const configs = {
       port: 5432,
       username: "postgres",
       password: "root",
-      database: "example",
+      database: "moviejled-bd",
       define: {
         timestamps: true, //? Nos obliga a que todas las tablas tengan la propiedad createdAt y upadtedAt
         underscored: true,
